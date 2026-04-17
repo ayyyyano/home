@@ -2,7 +2,7 @@
   {
     "name": "Github",
     "icon": "/images/icon/github.png",
-    "tip": "去 Github 看看",
+    "tip": "Follow Me",
     "url": "https://github.com/ayyyyano"
   },
   {
@@ -14,25 +14,25 @@
   {
     "name": "CoolApk",
     "icon": "/images/icon/coolapk.png",
-    "tip": "小绿书 (不常用)",
+    "tip": "小绿书",
     "url": "https://www.coolapk.com/u/2529353"
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "给我发邮件",
+    "tip": "发邮件",
     "url": "mailto:ayyyyano@outlook.com"
   },
   {
     "name": "X",
     "icon": "/images/icon/twitter.png",
-    "tip": "Twitter (不建议使用)",
+    "tip": "PM 我",
     "url": "https://x.com/ayyyyano"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "在电报联系我",
+    "tip": "PM 我",
     "url": "https://t.me/ayano_8964"
   }
 ]

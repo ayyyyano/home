@@ -3,36 +3,36 @@
     "name": "Github",
     "icon": "/images/icon/github.png",
     "tip": "去 Github 看看",
-    "url": "https://github.com/imsyy"
+    "url": "https://github.com/ayyyyano"
   },
   {
     "name": "BiliBili",
     "icon": "/images/icon/bilibili.png",
     "tip": "(゜-゜)つロ 干杯 ~",
-    "url": "https://space.bilibili.com/98544142"
+    "url": "https://space.bilibili.com/501335897"
   },
   {
-    "name": "QQ",
-    "icon": "/images/icon/qq.png",
-    "tip": "有什么事吗",
-    "url": "https://res.abeim.cn/api/qq/?qq=1539250352"
+    "name": "CoolApk",
+    "icon": "/images/icon/coolapk.png",
+    "tip": "小绿书 (不常用)",
+    "url": "https://www.coolapk.com/u/2529353"
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
-    "url": "mailto:one@imsyy.top"
+    "tip": "给我发邮件",
+    "url": "mailto:ayyyyano@outlook.com"
   },
   {
-    "name": "Twitter",
+    "name": "X",
     "icon": "/images/icon/twitter.png",
-    "tip": "你懂的 ~",
-    "url": "https://twitter.com/iimmsyy"
+    "tip": "Twitter (不建议使用)",
+    "url": "https://x.com/ayyyyano"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
-    "url": "https://t.me/bottom_user"
+    "tip": "在电报联系我",
+    "url": "https://t.me/ayano_8964"
   }
 ]

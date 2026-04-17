@@ -2,36 +2,31 @@
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "link": "https://blog.nekro.top/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
-  },
-  {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
-  },
-  {
-    "icon": "Compass",
-    "name": "起始页",
-    "link": "https://nav.imsyy.top/"
+    "icon": "Link",
+    "name": "友链",
+    "link": "https://blog.nekro.top/links/"
   },
   {
     "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "name": "GH Pages",
+    "link": "https://ayyyyano.github.io/"
   },
   {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
+    "icon": "UserCircle",
+    "name": "关于我",
+    "link": "https://ayyyyano.github.io/about.html"
   },
   {
     "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.imsyy.top/"
+    "name": "Edgetunnel",
+    "link": "https://et.nekro.top/admin/"
+  },
+  {
+    "icon": "Compass",
+    "name": "Google 镜像",
+    "link": "https://goo.nekro.top/"
   }
 ]

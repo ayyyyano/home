@@ -22,7 +22,7 @@
         </span>
         <!-- 站点备案 -->
         <span>
-          |&nbsp;
+          &nbsp;|&nbsp;
           <a v-if="siteIcp" href="https://icp.gov.moe/?keyword=20262514" target="_blank">
             {{ siteIcp }}
           </a>

@@ -91,7 +91,7 @@ const getWeatherData = async () => {
     }
   } catch (error) {
     console.error("天气信息获取失败:" + error);
-    onError("网站建设中 敬请期待");
+    onError("博客维护中 部分页面可能存在异常");
   }
 };
 

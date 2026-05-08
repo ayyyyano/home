@@ -10,23 +10,23 @@
     "link": "https://blog.nekro.top/links/"
   },
   {
-    "icon": "Train",
-    "name": "开往",
-    "link": "https://www.travellings.cn/go.html"
-  },
-  {
     "icon": "UserCircle",
     "name": "关于",
     "link": "https://blog.nekro.top/about/"
   },
   {
+    "icon": "Train",
+    "name": "开往",
+    "link": "https://www.travellings.cn/go.html"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "监控",
+    "link": "https://status.nekro.top/"
+  },
+  {
     "icon": "Book",
     "name": "原站点",
     "link": "https://ayyyyano.github.io/"
-  },
-  {
-    "icon": "Compass",
-    "name": "Google 镜像",
-    "link": "https://goo.nekro.top/"
   }
 ]

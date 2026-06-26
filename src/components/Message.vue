@@ -134,6 +134,11 @@ watch(
 
     @media (max-width: 720px) {
       max-width: 100%;
+      justify-content: center;
+      .name {
+        width: auto;
+        padding-left: 16px;
+      }
     }
   }
 

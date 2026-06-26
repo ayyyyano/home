@@ -4,7 +4,7 @@
     <!-- Logo -->
     <div class="logo">
       <img class="logo-img" :src="siteLogo" alt="logo" />
-      <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
+      <div :class="{ name: true, 'text-hidden': store.innerWidth >= 720, long: siteUrl[0].length >= 6 }">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
       </div>
@@ -106,7 +106,7 @@ watch(
       font-family: "Pacifico-Regular";
 
       .bg {
-        font-size: 5rem;
+        font-size: clamp(3rem, 10vw, 5rem);
       }
 
       .sm {
@@ -115,6 +115,9 @@ watch(
         @media (min-width: 721px) and (max-width: 789px) {
           display: none;
         }
+        @media (max-width: 720px) {
+          font-size: clamp(1rem, 4vw, 2rem);
+        }
       }
     }
     @media (max-width: 768px) {
@@ -122,9 +125,9 @@ watch(
         width: 100px;
       }
       .name {
-        height: 128px;
+        height: auto;
         .bg {
-          font-size: 4.5rem;
+          font-size: clamp(2rem, 8vw, 4.5rem);
         }
       }
     }

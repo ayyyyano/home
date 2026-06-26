@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "Article",
+    "name": "博客",
+    "link": "https://blog.nekro.top/"
+  },
+  {
+    "icon": "Link",
+    "name": "友链",
+    "link": "https://blog.nekro.top/links/"
+  },
+  {
+    "icon": "AccountCircle",
+    "name": "关于",
+    "link": "https://blog.nekro.top/about/"
+  },
+  {
+    "icon": "QuestionMark",
+    "name": "提问",
+    "link": "https://askbox.nekro.top/"
+  },
+  {
+    "icon": "Train",
+    "name": "开往",
+    "link": "https://www.travellings.cn/go.html"
+  },
+  {
+    "icon": "Code",
+    "name": "监控",
+    "link": "https://status.nekro.top/"
+  }
+]

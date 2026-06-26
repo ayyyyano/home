@@ -51,16 +51,27 @@ export default ({ mode }) =>
         workbox: {
           skipWaiting: true,
           clientsClaim: true,
+          cleanupOutdatedCaches: true,
           runtimeCaching: [
             {
-              urlPattern: /(.*?)\.(js|css|woff2|woff|ttf)/,
+              urlPattern: /(.*?)\.(js|css|woff2|woff)$/,
               handler: "CacheFirst",
               options: {
                 cacheName: "js-css-cache",
               },
             },
             {
-              urlPattern: /(.*?)\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|ico)/,
+              urlPattern: /(.*?)\.(ttf)$/,
+              handler: "StaleWhileRevalidate",
+              options: {
+                cacheName: "font-cache",
+                expiration: {
+                  maxAgeSeconds: 7 * 24 * 60 * 60, // 7 天
+                },
+              },
+            },
+            {
+              urlPattern: /(.*?)\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|ico)$/,
               handler: "StaleWhileRevalidate",
               options: {
                 cacheName: "image-cache",

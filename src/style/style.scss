@@ -19,7 +19,7 @@ body {
   padding: 0;
   background-color: #333;
   overflow: hidden;
-  font-family: "HarmonyOS_Regular", sans-serif;
+  font-family: "Pacifico-Regular", "HarmonyOS_Regular", sans-serif;
 }
 
 *,
@@ -47,7 +47,7 @@ a:hover {
 @font-face {
   font-family: "Pacifico-Regular";
   font-display: swap;
-  src: url("/font/Pacifico-Regular.ttf") format("truetype");
+  src: url("/font/Pacifico-Regular-all.ttf") format("truetype");
 }
 
 @font-face {

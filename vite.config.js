@@ -10,10 +10,10 @@ import viteCompression from "vite-plugin-compression";
 
 // HTML 模板关键环境变量默认值 (避免 Vercel 等平台缺少 env 时构建崩溃)
 const HTML_ENV_DEFAULTS = {
-  VITE_SITE_NAME: '無名の主页',
-  VITE_SITE_AUTHOR: '無名',
-  VITE_SITE_KEYWORDS: '無名,个人主页',
-  VITE_SITE_DES: '一个默默无闻的主页',
+  VITE_SITE_NAME: "Nekro's SEKAI",
+  VITE_SITE_AUTHOR: 'Nekro',
+  VITE_SITE_KEYWORDS: 'Nekro,Ayyyyano,个人主页',
+  VITE_SITE_DES: '谢谢你在人群中找到我。',
   VITE_SITE_LOGO: '/images/icon/favicon.ico',
   VITE_SITE_APPLE_LOGO: '/images/logo/apple-touch-icon.png',
 };

@@ -4,7 +4,7 @@
     <!-- Logo -->
     <div class="logo">
       <img class="logo-img" :src="siteLogo" alt="logo" />
-      <div :class="{ name: true, 'text-hidden': store.innerWidth >= 720, long: siteUrl[0].length >= 6 }">
+      <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
       </div>
@@ -138,6 +138,9 @@ watch(
       .name {
         width: auto;
         padding-left: 16px;
+        overflow: visible;
+        white-space: normal;
+        text-overflow: clip;
       }
     }
   }

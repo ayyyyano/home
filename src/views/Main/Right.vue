@@ -39,7 +39,7 @@ const siteUrl = computed(() => {
   .logo {
     width: 100%;
     font-family: "Pacifico-Regular";
-    font-size: clamp(1rem, 5vw, 2.25rem);
+    font-size: clamp(1.5rem, 7vw, 2.25rem);
     position: fixed;
     top: 6%;
     left: 0;

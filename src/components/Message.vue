@@ -106,7 +106,7 @@ watch(
       font-family: "Pacifico-Regular";
 
       .bg {
-        font-size: clamp(3rem, 10vw, 5rem);
+        font-size: 5rem;
       }
 
       .sm {
@@ -116,7 +116,7 @@ watch(
           display: none;
         }
         @media (max-width: 720px) {
-          font-size: clamp(1rem, 4vw, 2rem);
+          font-size: 1.5rem;
         }
       }
     }
@@ -127,7 +127,7 @@ watch(
       .name {
         height: auto;
         .bg {
-          font-size: clamp(2rem, 8vw, 4.5rem);
+          font-size: 3.5rem;
         }
       }
     }

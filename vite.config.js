@@ -8,16 +8,29 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import viteCompression from "vite-plugin-compression";
 
-// HTML 模板关键环境变量默认值 (避免 Vercel 等平台缺少 env 时构建崩溃)
-const HTML_ENV_DEFAULTS = {
+// 环境变量默认值 (避免 Vercel 等平台缺少 .env 文件时构建崩溃)
+const ENV_DEFAULTS = {
   VITE_SITE_NAME: "Nekro's SEKAI",
   VITE_SITE_AUTHOR: 'Nekro',
   VITE_SITE_KEYWORDS: 'Nekro,Ayyyyano,个人主页',
   VITE_SITE_DES: '谢谢你在人群中找到我。',
+  VITE_SITE_URL: 'nekro.top',
   VITE_SITE_LOGO: '/images/icon/favicon.ico',
+  VITE_SITE_MAIN_LOGO: '/images/icon/logo.png',
   VITE_SITE_APPLE_LOGO: '/images/logo/apple-touch-icon.png',
+  VITE_DESC_HELLO: 'Hello !',
+  VITE_DESC_TEXT: '谢谢你在人群中找到我。',
+  VITE_DESC_HELLO_OTHER: 'Oops !',
+  VITE_DESC_TEXT_OTHER: '哎呀，这都被你发现了（ 再点击一次可关闭 ）',
+  VITE_WEATHER_KEY: '',
+  VITE_SITE_START: '2026-04-10',
+  VITE_SITE_ICP: '萌ICP备20262514号',
+  VITE_SONG_API: 'https://meting-api.nekro.top/api',
+  VITE_SONG_SERVER: 'netease',
+  VITE_SONG_TYPE: 'song',
+  VITE_SONG_ID: '2057797340',
 };
-for (const [key, value] of Object.entries(HTML_ENV_DEFAULTS)) {
+for (const [key, value] of Object.entries(ENV_DEFAULTS)) {
   if (!process.env[key]) process.env[key] = value;
 }
 

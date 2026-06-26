@@ -2,7 +2,7 @@
   <div v-if="siteLinks[0]" class="links">
     <div class="line">
       <Icon size="20">
-        <Link />
+        <DnsFilled />
       </Icon>
       <span class="title">网站列表</span>
     </div>
@@ -42,12 +42,12 @@
 
 <script setup>
 import { Icon } from "@vicons/utils";
-// 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode, UserCircle, Train } from "@vicons/fa"; // 注意使用正确的类别
+import { ArticleFilled, CodeFilled, DnsFilled, LinkFilled, AccountCircleFilled, TrainFilled, BookFilled, QuestionMarkFilled } from "@vicons/material";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
 import siteLinks from "@/assets/siteLinks.json";
+import { startSakura } from "@/utils/sakura.js";
 
 const store = mainStore();
 
@@ -63,16 +63,13 @@ const siteLinksList = computed(() => {
 
 // 网站链接图标
 const siteIcon = {
-  Blog,
-  Cloud,
-  CompactDisc,
-  Compass,
-  Book,
-  Fire,
-  LaptopCode,
-  Link,
-  UserCircle,
-  Train
+  Article: ArticleFilled,
+  Book: BookFilled,
+  Code: CodeFilled,
+  Link: LinkFilled,
+  AccountCircle: AccountCircleFilled,
+  QuestionMark: QuestionMarkFilled,
+  Train: TrainFilled
 };
 
 // 链接跳转
@@ -86,6 +83,7 @@ const jumpLink = (data) => {
 
 onMounted(() => {
   console.log(siteLinks);
+  startSakura();
 });
 </script>
 

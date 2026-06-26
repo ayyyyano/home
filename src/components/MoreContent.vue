@@ -1,5 +1,5 @@
 <template>
-  <div class="more-content">Tips: 你可以点击一言卡片以打开音乐播放器。</div>
+  <div class="more-content">Tips: 你可以点击一言卡片打开音乐播放器。</div>
 </template>
 
 <style lang="scss" scoped>

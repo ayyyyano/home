@@ -13,13 +13,13 @@
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
   <div class="weather" v-else>
-    <span>( •̀ ω •́ )y</span>
+    <span>{{ dateInfo }}</span>
   </div>
 </template>
 
 <script setup>
 import { getAdcode, getWeather, getOtherWeather } from "@/api";
-import { Error } from "@icon-park/vue-next";
+import { getDateInfo } from "@/utils/calendar.js";
 
 // 高德开发者 Key
 const mainKey = import.meta.env.VITE_WEATHER_KEY;
@@ -37,6 +37,9 @@ const weatherData = reactive({
     windpower: null, // 风力级别
   },
 });
+
+// 日期信息
+const dateInfo = ref('');
 
 // 取出天气平均值
 const getTemperature = (min, max) => {
@@ -91,24 +94,12 @@ const getWeatherData = async () => {
     }
   } catch (error) {
     console.error("天气信息获取失败:" + error);
-    onError("博客维护中 部分页面可能存在异常");
   }
-};
-
-// 报错信息
-const onError = (message) => {
-  ElMessage({
-    message,
-    icon: h(Error, {
-      theme: "filled",
-      fill: "#efefef",
-    }),
-  });
-  console.error(message);
 };
 
 onMounted(() => {
   // 调用获取天气
   getWeatherData();
+  dateInfo.value = getDateInfo();
 });
 </script>

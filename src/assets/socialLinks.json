@@ -2,7 +2,7 @@
   {
     "name": "Github",
     "icon": "/images/icon/github.png",
-    "tip": "Follow Me",
+    "tip": "提交 Issue / PR",
     "url": "https://github.com/ayyyyano"
   },
   {
@@ -14,25 +14,25 @@
   {
     "name": "CoolApk",
     "icon": "/images/icon/coolapk.png",
-    "tip": "小绿书",
+    "tip": "呃呃小绿书",
     "url": "https://www.coolapk.com/u/2529353"
-  },
-  {
-    "name": "Email",
-    "icon": "/images/icon/email.png",
-    "tip": "发邮件",
-    "url": "mailto:ayyyyano@outlook.com"
   },
   {
     "name": "X",
     "icon": "/images/icon/twitter.png",
-    "tip": "PM 我",
-    "url": "https://x.com/ayyyyano"
+    "tip": "互 fo 大欢迎",
+    "url": "https://x.com/pavlova233"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "PM 我",
+    "tip": "可 PM / DM",
     "url": "https://t.me/ayano_8964"
+  },
+  {
+    "name": "Email",
+    "icon": "/images/icon/email.png",
+    "tip": "商务联系",
+    "url": "mailto:i@nekro.top"
   }
 ]

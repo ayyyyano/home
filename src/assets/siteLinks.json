@@ -1,6 +1,6 @@
 [
   {
-    "icon": "Blog",
+    "icon": "Article",
     "name": "博客",
     "link": "https://blog.nekro.top/"
   },
@@ -10,9 +10,14 @@
     "link": "https://blog.nekro.top/links/"
   },
   {
-    "icon": "UserCircle",
+    "icon": "AccountCircle",
     "name": "关于",
     "link": "https://blog.nekro.top/about/"
+  },
+  {
+    "icon": "QuestionMark",
+    "name": "提问",
+    "link": "https://askbox.nekro.top/"
   },
   {
     "icon": "Train",
@@ -20,13 +25,8 @@
     "link": "https://www.travellings.cn/go.html"
   },
   {
-    "icon": "LaptopCode",
+    "icon": "Code",
     "name": "监控",
     "link": "https://status.nekro.top/"
-  },
-  {
-    "icon": "Book",
-    "name": "原站点",
-    "link": "https://ayyyyano.github.io/"
   }
 ]

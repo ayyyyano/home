@@ -8,6 +8,19 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import viteCompression from "vite-plugin-compression";
 
+// HTML 模板关键环境变量默认值 (避免 Vercel 等平台缺少 env 时构建崩溃)
+const HTML_ENV_DEFAULTS = {
+  VITE_SITE_NAME: '無名の主页',
+  VITE_SITE_AUTHOR: '無名',
+  VITE_SITE_KEYWORDS: '無名,个人主页',
+  VITE_SITE_DES: '一个默默无闻的主页',
+  VITE_SITE_LOGO: '/images/icon/favicon.ico',
+  VITE_SITE_APPLE_LOGO: '/images/logo/apple-touch-icon.png',
+};
+for (const [key, value] of Object.entries(HTML_ENV_DEFAULTS)) {
+  if (!process.env[key]) process.env[key] = value;
+}
+
 // https://vitejs.dev/config/
 export default ({ mode }) =>
   defineConfig({

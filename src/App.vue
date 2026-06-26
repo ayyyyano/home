@@ -150,9 +150,6 @@ onBeforeUnmount(() => {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      @media (max-width: 720px) {
-        padding: 0 0.25rem;
-      }
     }
     .more {
       position: fixed;

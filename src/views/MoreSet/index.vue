@@ -171,7 +171,7 @@ const jumpTo = (url) => {
 
         .num {
           font-size: 2rem;
-          font-family: "Pacifico-Regular";
+  font-family: "ZenMaruGothic-Medium";
         }
 
         .github {

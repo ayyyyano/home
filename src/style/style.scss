@@ -19,7 +19,7 @@ body {
   padding: 0;
   background-color: #333;
   overflow: hidden;
-  font-family: "Pacifico-Regular", "HarmonyOS_Regular", sans-serif;
+  font-family: "ZenMaruGothic-Medium", "loli", sans-serif;
 }
 
 *,
@@ -45,9 +45,15 @@ a:hover {
 
 // 字体文件
 @font-face {
-  font-family: "Pacifico-Regular";
+  font-family: "ZenMaruGothic-Medium";
   font-display: swap;
-  src: url("/font/Pacifico-Regular.ttf") format("truetype");
+  src: url("/font/ZenMaruGothic-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "loli";
+  font-display: swap;
+  src: url("/font/loli.ttf") format("truetype");
 }
 
 @font-face {

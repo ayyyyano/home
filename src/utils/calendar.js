@@ -61,13 +61,19 @@ function getSolarTerm(date) {
   return null;
 }
 
+// 已知春节日期 (公历月日)
+const CNY_DATES = {
+  2024: [2, 10], 2025: [1, 29], 2026: [2, 17], 2027: [2, 6], 2028: [1, 26],
+  2029: [2, 13], 2030: [2, 3],
+};
+
 // 获取农历信息
 function getLunarInfo(date) {
   const year = date.getFullYear();
   const month = date.getMonth() + 1;
   const day = date.getDate();
 
-  if (year < 1900 || year > 2100) return { month: '?', day: '?' };
+  if (year < 2024 || year > 2030) return { month: '?', day: '?' };
 
   // 获取该年农历数据
   const info = LUNAR_INFO[year - 1900];
@@ -75,24 +81,11 @@ function getLunarInfo(date) {
   const leapDays = (info >> 16) & 0x1;
   const monthDays = (info >> 4) & 0xfff;
 
-  // 计算春节的儒略日 (1900年春节为1月31日)
-  const baseDate = new Date(1900, 0, 31);
+  // 获取春节日期
+  const [cnyM, cnyD] = CNY_DATES[year];
+  const cnyDate = new Date(year, cnyM - 1, cnyD);
   const targetDate = new Date(year, month - 1, day);
-  let offset = Math.round((targetDate - baseDate) / 86400000);
-
-  // 减去从1900到目标年之间的天数
-  for (let y = 1900; y < year; y++) {
-    const yInfo = LUNAR_INFO[y - 1900];
-    const yLeap = yInfo & 0xf;
-    const yLeapDays = (yInfo >> 16) & 0x1;
-    const yMonthDays = (yInfo >> 4) & 0xfff;
-    let total = 0;
-    for (let m = 0; m < 12; m++) {
-      total += (yMonthDays >> m) & 1 ? 30 : 29;
-    }
-    if (yLeap > 0) total += yLeapDays ? 30 : 29;
-    offset -= total;
-  }
+  let offset = Math.round((targetDate - cnyDate) / 86400000);
 
   if (offset < 0) return { month: '十二', day: LUNAR_DAYS[29 + offset] || '?', isLeap: false };
 

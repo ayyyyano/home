@@ -37,7 +37,7 @@ function getSolarTerm(date) {
   const month = date.getMonth() + 1;
   const day = date.getDate();
   for (const t of SOLAR_TERMS) {
-    if (t.m === month && Math.abs(t.d - day) <= 2) return t.name;
+    if (t.m === month && t.d === day) return t.name;
   }
   return null;
 }

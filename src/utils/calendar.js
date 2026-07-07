@@ -78,7 +78,7 @@ function getLunarInfo(date) {
   // 计算春节的儒略日 (1900年春节为1月31日)
   const baseDate = new Date(1900, 0, 31);
   const targetDate = new Date(year, month - 1, day);
-  let offset = Math.floor((targetDate - baseDate) / 86400000);
+  let offset = Math.round((targetDate - baseDate) / 86400000);
 
   // 减去从1900到目标年之间的天数
   for (let y = 1900; y < year; y++) {
